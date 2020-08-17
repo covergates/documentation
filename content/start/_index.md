@@ -18,5 +18,5 @@ please replace [https://covergates.com](https://covergates.com) in the example t
 For more information about self-hosted Coverages service, please refer to [Self-Hosted Server](/server) chapter.
 
 - [Quick Start](/start/quick)
+- [Command Line Tool](/start/cli)
 - [Repository Setting](/start/setting)
-- [Pull Request](/start/comment)
