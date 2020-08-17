@@ -1,0 +1,45 @@
+baseURL = "https://example.com"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Covergates Documentation"
+theme = "ace-documentation"
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+ordersectionsby = "weight" # ordersectionsby = "title"
+disableSearch = false # default is false
+disableReadmoreNav = true # set true to hide prev/next navigation, default is false
+highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+menushortcutsnewtab = true # set true to open shortcuts links to a new tab/window
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-home mx-1'></i> Website"
+url = "https://covergates.com"
+weight = 1
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github mx-1'></i> GitHub"
+url = "https://github.com/covergates/covergates"
+weight = 2
+
+[[menu.shortcuts]]
+name = "<button class='btn btn-sm btn-success mt-n1'>Download</button>"
+url = "https://github.com/covergates/covergates/releases"
+weight = 3
