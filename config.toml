@@ -1,4 +1,4 @@
-baseURL = "https://covergates.github.io"
+baseURL = "https://docs.covergates.com"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"

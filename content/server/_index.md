@@ -4,5 +4,3 @@ weight: 30
 ---
 
 ---
-
-Covergates is
