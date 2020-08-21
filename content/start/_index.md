@@ -3,4 +3,20 @@ title: Getting Started
 weight: 10
 ---
 
-[test](/start/quick)
+{{< lead >}}
+How to use Covergates for beginner.
+{{< /lead >}}
+
+## Overview
+
+---
+
+This chapter will introduce how to use [Covergates](https://covergates.com).
+It will use official website [https://covergates.com](https://covergates.com) as example.
+If you already have a self-hosted Covergates service,
+please replace [https://covergates.com](https://covergates.com) in the example to your URL.
+For more information about self-hosted Coverages service, please refer to [Self-Hosted Server](/server) chapter.
+
+- [Quick Start](/start/quick)
+- [Repository Setting](/start/setting)
+- [Pull Request](/start/comment)
