@@ -29,3 +29,44 @@ Arguments:
 
 {{< alert  style="success">}}Reach the [source code](https://github.com/covergates/github-actions) for more detail.{{< /alert  >}}
 
+## Drone
+
+Covergates supports Drone CI. The supported platforms are:
+
+- Linux x64
+- ARM
+- ARM x64
+
+Below is a `.drone.yml` example:
+
+```yml
+kind: pipeline
+name: default
+steps:
+  - name: upload
+    image: covergates/drone-covergates
+    settings:
+      report_id: bt9huh223akg00dkqseg
+      report: ./coverage/lcov.info
+      type: lcov
+```
+
+To leave a comment on pull request:
+
+```yml
+kind: pipeline
+name: default
+steps:
+  - name: upload
+    image: covergates/drone-covergates
+    settings:
+      report_id: bt9huh223akg00dkqseg
+      report: ./coverage/lcov.info
+      type: lcov
+      comment: true
+    when:
+      event:
+        - pull_request
+```
+
+{{< alert  style="success">}}Reach the [source code](https://github.com/covergates/drone-covergates) for more detail.{{< /alert  >}}

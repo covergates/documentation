@@ -47,6 +47,7 @@ It includes Linux, Windows and macOS.
 - CI Tools
 
     - GitHub Action
+    - Drone
 
 - Database
 
@@ -84,12 +85,6 @@ It includes Linux, Windows and macOS.
     - Java
     - Others, [let us know the language you want!](https://github.com/covergates/covergates/issues)
 
-- CI Tools
-
-    - Drone
-
 - Database
 
     - MySQL
-
-
