@@ -30,6 +30,7 @@ COMMANDS:
    help, h  Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
+   --token value  provide OAuth token for API [$GATES_TOKEN]
    --url value    api service url (default: "https://covergates.com/api/v1") [$API_URL]
    --help, -h     show help (default: false)
    --version, -v  print the version (default: false)
@@ -60,6 +61,7 @@ OPTIONS:
    --branch value  branch to upload the report [$GITHUB_HEAD_REF, $DRONE_SOURCE_BRANCH]
    --help, -h      show help (default: false)
 ```
+
 `covergates upload` helps you upload coverage reports. It requires at least 3 arguments:
 
 - `--report`: Report ID
@@ -78,6 +80,7 @@ The supported report type `--type` are:
 |Python|`python`|Coverage.py - xml|coverage.xml|
 |Ruby|`ruby`|SimpleCov - RSpec|.resultset.json|
 |C / C++|`lcov`|lcov|lcov.info|
+|PHP|`clover`|Clover|coverage.xml|
 |Javascript / Typescript|`lcov`|lcov|lcov.info|
 {{< /table >}}
 

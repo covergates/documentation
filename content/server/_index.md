@@ -44,7 +44,9 @@ or
 {{< code lang="sh" >}}
 export GATES_SERVER_ADDR="http://your.domain.name"
 export GATES_SERVER_BASE="/covergates"
+
 # Server will bind to http://your.domain.name/covergates
+
 {{< /code >}}
 
 ### Config Database
@@ -56,7 +58,7 @@ It will create a `core.db` under working path, all reports will save into `core.
 export GATES_DB_NAME="covergates.db"
 {{< /code >}}
 
-We also provide [PostgreSQL](https://www.postgresql.org/) as database server. Here is an example:
+To use [PostgreSQL](https://www.postgresql.org/) as database server. Here is an example:
 
 {{< code lang="sh" >}}
 export GATES_DB_DRIVER="postgres",
@@ -69,11 +71,25 @@ export GATES_DB_PASSWORD="PASSWORD",
 
 {{< alert  style="success">}} You need to create a database on your PostgreSQL server in advance.{{< /alert >}}
 
+To use [MySQL](https://www.mysql.com/) as database server. Here is an example:
+
+{{< code lang="sh" >}}
+export GATES_DB_DRIVER="mysql",
+export GATES_DB_HOST="127.0.0.1",
+export GATES_DB_PORT="3306",
+export GATES_DB_USER="mysql",
+export GATES_DB_NAME="covergates",
+export GATES_DB_PASSWORD="PASSWORD",
+{{< /code >}}
+
+{{< alert  style="warning">}} Do not use NO_ZERO_IN_DATE in your sql_mode. Covergates may use dummy date (value Zero) for OAuth token without expiration date {{< /alert >}}
+
 ### Config Git Service
 
 `covergates-server` requires to connect with a Git service to access your source code. Supported Git service are:
 
 - [Gitea](/server/gitea)
 - [GitHub](/server/github)
+- [GitLab](/server/gitlab)
 
 Please refer to the Git service you using to learn how to config `covergates-server`.

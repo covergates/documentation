@@ -31,44 +31,46 @@ It includes Linux, Windows and macOS.
 
 - Git Service Support
 
-    - Gitea
-    - GitHub
+  - Gitea
+  - GitHub
+  - GitLab
 
 - Languages Support
 
-    - Go
-    - Python
-    - Ruby
-    - Perl
-    - C / C++
-    - Javascript
-    - TypeScript
+  - Go
+  - Python
+  - Ruby
+  - Perl
+  - C / C++
+  - Javascript
+  - TypeScript
+  - PHP
 
 - CI Tools
 
-    - GitHub Action
-    - Drone
+  - GitHub Action
+  - Drone
 
 - Database
 
-    - SQLite
-    - PostgreSQL
+  - SQLite
+  - PostgreSQL
+  - MySQL
 
 - Web Service
 
-    - Source Code Coverage Highlight
+  - Source Code Coverage Highlight
 
-    - Repository Setting Dashboard
+  - Repository Setting Dashboard
 
-    - Commits History
+  - Commits History
 
-    - Promotions
+  - Promotions
 
-        - Coverage Badge [![badge](https://covergates.com/api/v1/reports/bsi5dvi23akg00a0tgl0/badge?)](https://covergates.com/report/github/covergates/covergates)
-        - Repository Status Card
+    - Coverage Badge [![badge](https://covergates.com/api/v1/reports/bsi5dvi23akg00a0tgl0/badge?)](https://covergates.com/report/github/covergates/covergates)
+    - Repository Status Card
 
-            [![card](https://covergates.com/api/v1/reports/bsi5dvi23akg00a0tgl0/card)](https://covergates.com/report/github/covergates/covergates)
-
+      [![card](https://covergates.com/api/v1/reports/bsi5dvi23akg00a0tgl0/card)](https://covergates.com/report/github/covergates/covergates)
 
 ## Coming Soon
 
@@ -76,15 +78,7 @@ It includes Linux, Windows and macOS.
 
 <i class='fas fa-wrench'></i> We are working on:
 
-- Git Service
-
-    - GitLab Support
-
 - Language Support
 
-    - Java
-    - Others, [let us know the language you want!](https://github.com/covergates/covergates/issues)
-
-- Database
-
-    - MySQL
+  - Java
+  - Others, [let us know the language you want!](https://github.com/covergates/covergates/issues)
